@@ -1,6 +1,6 @@
-from app.apps.core.mapper import Mapper
+from Backend.core.mapper import Mapper
 from .OrderBO import OrderObject
-from app.configs.base import db_connector
+from Backend.configs.base import db_connector
 
 
 class OrderMapper(Mapper):
@@ -12,21 +12,20 @@ class OrderMapper(Mapper):
         cursor = cnx.cursor(buffered=True)
         command = """
         SELECT
-        id, quantity, annotation, tablenumber, product_id, order_status
+        id, quantity, annotation, tablenumber, product_id
         FROM person WHERE id=%s
         """
         cursor.execute(command, (key, ))
         entity = cursor.fetchone()
 
         try:
-            (id, quantity, annotation, tablenumber, product_id, order_status) = entity
+            (id, quantity, annotation, tablenumber, product_id) = entity
             result = OrderObject(
                 id_=id,
                 quantity=quantity,
                 annotation=annotation,
                 tablenumber=tablenumber,
                 product_id=product_id,
-                order_status=order_status,
             )
         except IndexError:
             result = None
@@ -43,19 +42,18 @@ class OrderMapper(Mapper):
         cursor = cnx.cursor()
         cursor.execute("""
         SELECT id, quantity,  annoation, tablenumber, 
-                product_id, order_status, 
+                product_id, 
         FROM order
         """)
         tuples = cursor.fetchall()
 
-        for (id, quantity, annotation, tablenumber, product_id, order_status) in tuples:
+        for (id, quantity, annotation, tablenumber, product_id) in tuples:
             order = OrderObject()
             order.id_ = id
             order.quantity = quantity
             order.annotation = annotation
             order.tablenumber = tablenumber
             order.product_id = product_id
-            order.order_status = order_status
 
 
             result.append(order)
@@ -72,15 +70,14 @@ class OrderMapper(Mapper):
         command = """
             INSERT INTO order (
                  quantity, annotation, tablenumber,
-                 product_id, order_status
-            ) VALUES (%s,%s,%s,%s,%s)
+                 product_id
+            ) VALUES (%s,%s,%s,%s)
         """
         cursor.execute(command, (
             object.quantity,
             object.annotation,
             object.tablenumber,
             object.product_id,
-            object.order_status
         ))
         cnx.commit()
         cursor.execute("SELECT MAX(id) FROM order")
@@ -97,16 +94,26 @@ class OrderMapper(Mapper):
         annotation=%s, 
         tablenumber=%s, 
         product_id=%s, 
-        order_status=%s
         WHERE id=%s"""
         cursor.execute(command, (
             object.quantity,
             object.annotation,
             object.tablenumber,
             object.product_id,
-            object.order_status,
             object.id_
         ))
+
+        cnx.commit()
+        cursor.close()
+
+    def delete(cnx: db_connector, order: int):
+        """Deletes an order."""
+        cursor = cnx.cursor(buffered=True)
+        command = ("DELETE FROM order WHERE id=%s")
+        try:
+            cursor.execute(command, (order,))
+        except:
+            print("Order does not exist!")
 
         cnx.commit()
         cursor.close()

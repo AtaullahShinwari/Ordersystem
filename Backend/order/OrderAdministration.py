@@ -1,14 +1,14 @@
 from .OrderMapper import OrderMapper
 from .OrderBO import OrderObject
-from app.configs.base import db_connector
+from Backend.configs.base import db_connector
 
 
 class OrderAdministration:
     """Order Manager class. For managing database interactions."""
 
     @staticmethod
-    def create_order(quantity: int, annotation: str, tablenumber: int, product_id: int, 
-                    order_status: bool) -> OrderObject:
+    def create_order(quantity: int, annotation: str, tablenumber: int, 
+                    product_id: int, ) -> OrderObject:
         """Create an OrderObject."""
         with db_connector as db:
             cnx = db._cnx
@@ -17,7 +17,6 @@ class OrderAdministration:
             order.annotation=annotation
             order.tablenumber=tablenumber
             order.product_id=product_id
-            order.order_status=order_status
             return OrderMapper.insert(cnx=cnx, object=order)
 
     @staticmethod
