@@ -9,3 +9,4 @@ class PersonObject(BusinessObject):
         self.google_user_id = google_user_id
 
         super().__init__(id_=id_)
+
