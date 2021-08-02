@@ -2,7 +2,7 @@ from Backend.configs.base import api
 from .ProductMarshalling import product_marshalling
 from .ProductBO import ProductObject
 from .ProductAdministration import ProductAdministration
-from Backend.core.auth import AuthView
+from flask_restx import Resource
 
 
 """"Namespace prefix Product for APIs."""
@@ -13,7 +13,7 @@ namespace = api.namespace(
 
 
 @namespace.route("/")
-class ProductOperationAPI(AuthView):
+class ProductOperationAPI(Resource):
     """Basic API for profile."""
     @api.marshal_with(product_marshalling, code=201)
     @api.expect(product_marshalling)
@@ -38,7 +38,7 @@ class ProductOperationAPI(AuthView):
         return '', 200
 
 @namespace.route("/<string:name")
-class ProductAPI(AuthView):
+class ProductAPI(Resource):
     """Basic API for profile."""
     @api.marshal_with(product_marshalling, code=201)
     @api.expect(product_marshalling)
@@ -48,7 +48,7 @@ class ProductAPI(AuthView):
         return prd
 
 @namespace.route("/productid/<int:product>")
-class ProductDeleteAPI(AuthView):
+class ProductDeleteAPI(Resource):
     @api.marshal_with(product_marshalling, code=201)
     @api.expect(product_marshalling)
     def delete(self, product: int) -> dict:
