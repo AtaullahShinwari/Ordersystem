@@ -17,11 +17,22 @@ USE `ordersystem_db` ;
 -- -----------------------------------------------------
 -- Table `ordersystem_db`.`group`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ordersystem_db`.`menu` (
+CREATE TABLE IF NOT EXISTS `ordersystem_db`.`upper_cat` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `upper_category` VARCHAR(45) NULL DEFAULT NULL,
-  `subcategory` VARCHAR(45) NULL DEFAULT NULL,
+  `uppercat_name` VARCHAR(45) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS `ordersystem_db`.`sub_cat` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `subcat_name` VARCHAR(45) NULL DEFAULT NULL,
+  `upper_cat` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `subcat_uppercat`
+   FOREIGN KEY (`upper_cat`)
+        REFERENCES ordersystem_db.upper_cat(id)
+        ON DELETE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
