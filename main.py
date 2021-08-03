@@ -4,7 +4,7 @@ from Backend.configs import BaseConfigs
 from Backend.configs.base import api
 from dotenv import load_dotenv
 
-
+from Backend.uppercat.UpperCatViews import namespace as uppercat_namespace
 
 
 load_dotenv()
@@ -30,7 +30,7 @@ def init_lazily(blueprint: Blueprint) -> None:
 
 def init_routes() -> None:
     """Init Routes by using namespaces."""
-   
+    api.add_namespace(uppercat_namespace)
 
 
 if __name__ == "__main__":
