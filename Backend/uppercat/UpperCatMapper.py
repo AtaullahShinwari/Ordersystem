@@ -49,3 +49,40 @@ class UpperCatMapper(Mapper):
         cursor.close()
 
         return result
+
+    def delete(cnx: db_connector, upperCat: int):
+        """Get All Upper Categories."""
+
+        cursor = cnx.cursor(buffered=True)
+        command = """
+        DELETE FROM `ordersystem_db`.`upper_cat`
+        WHERE id=%s;
+        """
+
+        try:
+            cursor.execute(command, (upperCat))
+        except Exception:
+            print("Category does not exist!")
+
+        cnx.commit()
+        cursor.close()
+
+    def update(cnx: db_connector, upperCat: UpperCatObject) -> UpperCatObject:
+        """Get All Upper Categories."""
+
+        cursor = cnx.cursor(buffered=True)
+        command = """
+        UPDATE `ordersystem_db`.`upper_cat`
+        SET
+        `uppercat_name` = %s
+        WHERE `id` = %s;
+        """
+
+        cursor.execute(command,(upperCat.upper_category, upperCat.id_))
+
+        cnx.commit()
+        cursor.close()
+
+        return upperCat
+
+
