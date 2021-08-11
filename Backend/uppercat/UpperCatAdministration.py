@@ -22,14 +22,14 @@ class UpperCatAdministration:
 
     @staticmethod
     def delete_upperCat(upperCat: int) -> UpperCatObject:
-        """Returns UpperCats by id."""
+        """seletes UpperCats by id."""
         with db_connector as db:
             cnx = db._cnx
             return UpperCatMapper.delete(cnx=cnx, upperCat=upperCat)
 
     @staticmethod
     def update_upperCat(upperCat: UpperCatObject) -> UpperCatObject:
-        """Returns UpperCats by id."""
+        """updates UpperCats by id."""
         with db_connector as db:
             cnx = db._cnx
             return UpperCatMapper.update(cnx=cnx, upperCat=upperCat)

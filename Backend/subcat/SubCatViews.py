@@ -25,7 +25,8 @@ class AllSubCatOperationAPI(Resource):
     def post(self, upperCat_id: int) -> dict:
         """Create SubCat Endpoint."""
         subCat_ = SubCatObject(**api.payload)
-        subCat = SubCatAdministration.insert_subCat(upperCat=upperCat_id,subCat=subCat_)
+        subCat_.upper_category = upperCat_id
+        subCat = SubCatAdministration.insert_subCat(subCat=subCat_)
         return subCat
 
 @namespace.route("/<int:subCat_id>")

@@ -5,7 +5,7 @@ from Backend.configs.base import api
 from dotenv import load_dotenv
 
 from Backend.uppercat.UpperCatViews import namespace as uppercat_namespace
-
+from Backend.subcat.SubCatViews import namespace as subcat_namespace
 
 load_dotenv()
 
@@ -31,7 +31,7 @@ def init_lazily(blueprint: Blueprint) -> None:
 def init_routes() -> None:
     """Init Routes by using namespaces."""
     api.add_namespace(uppercat_namespace)
-
+    api.add_namespace(subcat_namespace)
 
 if __name__ == "__main__":
     app = create_app()
