@@ -17,7 +17,7 @@ class AllUpperCatOperationAPI(Resource):
     @api.expect(upperCat_marshalling)
     def get(self) -> dict:
         """Get a UpperCat by google_user_id"""
-        upperCat = UpperCatAdministration.get_upperChats()
+        upperCat = UpperCatAdministration.get_upperCats()
         return upperCat
 
     @api.marshal_with(upperCat_marshalling, code=201)
@@ -42,5 +42,7 @@ class UpperCatOperationAPI(Resource):
     @api.expect(upperCat_marshalling)
     def put(self, upperCat_id: int) -> dict:
         """Delete UpperCat Endpoint."""
-        UpperCatAdministration.update_upperCat(upperCat=upperCat_id)
-        return '', 200
+        upperCat = UpperCatObject(**api.payload)
+        upperCat.id_ = upperCat_id
+        upperCat = UpperCatAdministration.update_upperCat(upperCat=upperCat)
+        return upperCat
