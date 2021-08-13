@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 from Backend.uppercat.UpperCatViews import namespace as uppercat_namespace
 from Backend.subcat.SubCatViews import namespace as subcat_namespace
+from Backend.order.OrderViews import namespace as order_namespace
 
 load_dotenv()
 

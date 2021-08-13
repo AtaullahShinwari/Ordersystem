@@ -1,4 +1,4 @@
-from app.apps.core.business_object import BusinessObject
+from Backend.core.businessobject import BusinessObject
 
 
 class OrderObject(BusinessObject):
