@@ -1,8 +1,8 @@
 from app.configs.base import api
-from .PersonMarshalling import person_marshalling
+from .OrderMarshalling import order_marshalling
 from .PersonBO import PersonObject
 from .PersonAdministration import PersonAdministration
-from app.apps.core.auth import AuthView
+from flask_restx import Api, Resource, fields
 
 
 """"Namespace prefix person for APIs."""
@@ -13,9 +13,9 @@ namespace = api.namespace(
 
 
 @namespace.route("/")
-class PersonOperationAPI(AuthView):
+class OrderOperationAPI(Resource):
     """Basic API for profile."""
-    @api.marshal_with(person_marshalling, code=201)
+    @api.marshal_with(order_marshalling, code=201)
     @api.expect(person_marshalling)
     def get(self) -> dict:
         """Get a person by google_user_id"""
