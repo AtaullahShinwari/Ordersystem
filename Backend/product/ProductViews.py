@@ -12,7 +12,7 @@ namespace = api.namespace(
 )
 
 
-@namespace.route("/")
+@namespace.route("/<int:SubCat_id>")
 class ProductOperationAPI(Resource):
     """Basic API for profile."""
     @api.marshal_with(product_marshalling, code=201)
@@ -24,10 +24,11 @@ class ProductOperationAPI(Resource):
 
     @api.marshal_with(product_marshalling, code=201)
     @api.expect(product_marshalling)
-    def post(self) -> dict:
+    def post(self, SubCat_id) -> dict:
         """Create product Endpoint."""
         product = ProductObject(**api.payload)
-        product = ProductAdministration.insert_product(product=self.product.id_)
+        product.sub_id = SubCat_id
+        product = ProductAdministration.insert_product(product=product)
         return product
 
     @api.marshal_with(product_marshalling, code=201)
