@@ -1,7 +1,7 @@
 from Backend.core.mapper import Mapper
 from .ProductBO import ProductObject
 from Backend.configs.base import db_connector
-from Backend.profile.ProfileAdministration import ProfileAdministration
+from Backend.product.ProductAdministration import ProductAdministration
 
 
 class ProductMapper(Mapper):
@@ -81,7 +81,7 @@ class ProductMapper(Mapper):
         cursor.execute("SELECT MAX(id) FROM product")
         max_id = cursor.fetchone()[0]
         object.id_ = max_id
-        ProfileAdministration.insert_profile(profile=None, product=object)
+        ProductAdministration.insert_product(profile=None, product=object)
         return object
 
     def update(cnx: db_connector, product: ProductObject):
