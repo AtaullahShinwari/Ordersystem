@@ -52,8 +52,8 @@ DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS `ordersystem_db`.`order` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `order_quantity` VARCHAR(45) NULL DEFAULT NULL,
-  `order_wish` VARCHAR(45) NULL DEFAULT NULL,
+  `quantity` VARCHAR(45) NULL DEFAULT NULL,
+  `annotation` VARCHAR(45) NULL DEFAULT NULL,
   `product` INT NOT NULL,
   `table_` INT NOT NULL,
   PRIMARY KEY (`id`),
