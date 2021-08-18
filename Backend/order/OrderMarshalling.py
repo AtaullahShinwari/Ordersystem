@@ -5,8 +5,8 @@ from Backend.configs.base import api
 order_marshalling = api.model('Order', {
     "quantity": fields.Integer(),
     "annotation": fields.String(),
-    "tablenumber": fields.Integer(readOnly=True),
-    "product_id": fields.Integer(readOnly=True),
+    "table_": fields.Integer(readOnly=True),
+    "product": fields.Integer(readOnly=True),
     "id_": fields.Integer(readOnly=True),
 })
  

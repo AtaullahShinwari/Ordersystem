@@ -7,16 +7,16 @@ class OrderAdministration:
     """Order Manager class. For managing database interactions."""
 
     @staticmethod
-    def create_order(quantity: int, annotation: str, tablenumber: int, 
-                    product_id: int, ) -> OrderObject:
+    def create_order(quantity: int, annotation: str, table_: int, 
+                    product: int, ) -> OrderObject:
         """Create an OrderObject."""
         with db_connector as db:
             cnx = db._cnx
             order = OrderObject
             order.quantity=quantity
             order.annotation=annotation
-            order.tablenumber=tablenumber
-            order.product_id=product_id
+            order.table_=table_
+            order.product=product
             return OrderMapper.insert(cnx=cnx, object=order)
 
     @staticmethod
