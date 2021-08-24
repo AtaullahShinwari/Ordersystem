@@ -1,0 +1,16 @@
+.LogoText{
+    width:100%;
+    height: auto;
+    display: flex;
+
+}
+
+.logoimg{
+    height:3rem;
+    width: auto;
+}
+
+.HeaderText{
+    font-size: 3rem;
+    color: #7E8389;
+}
