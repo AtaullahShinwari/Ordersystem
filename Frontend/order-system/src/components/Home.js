@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types'
+import Header from './Header'
 
 class Home extends Component {
     constructor(props) {
@@ -14,19 +15,27 @@ class Home extends Component {
         const {classes} = this.props
         return (
             <div>
+            <Header/>
+            <div className={classes.container}>
             <Link to="/Products">
             <button className={classes.test}>
                 Test
             </button>
             </Link>
             </div>
+            </div>
         );
     }
 }
 const styles = theme => ({
     test: {
-      width: '100%',
-      backgroundColor: 'red'
+        backgroundColor: "red"
+    },
+    container: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "200px",
     }
   });
 
