@@ -9,6 +9,11 @@ cursor: pointer;
 mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 26px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Pizzaimage:hover {
+    transform: scale(1.2);
 }
 
 .Speisentext{
@@ -54,6 +59,7 @@ cursor: pointer;
 mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 26px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .Drinktext{
@@ -98,6 +104,7 @@ cursor: pointer;
 mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 27px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .Desserttext{
