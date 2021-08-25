@@ -50,18 +50,13 @@ class Home extends Component {
                 </div>
 
             </div>
+
         );
     }
 }
 const styles = theme => ({
     test: {
         backgroundColor: "red"
-    },
-    container: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "200px",
     }
   });
 
