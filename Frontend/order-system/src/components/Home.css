@@ -1,0 +1,12 @@
+.Pizzaimage{
+background-blend-mode: overlay;
+mix-blend-mode: multiply;
+opacity: 0.85;
+border-radius: 0.16px;
+
+position: absolute;
+width: 398px;
+height: 589px;
+left: 81px;
+top: 180px;
+}

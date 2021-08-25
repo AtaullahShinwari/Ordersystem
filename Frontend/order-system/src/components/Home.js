@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import {withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types'
 import Header from './Header'
+import Pizzaimg from '../images/pizza_logo.jpg'
+import './Home.css'
 
 class Home extends Component {
     constructor(props) {
@@ -22,7 +24,9 @@ class Home extends Component {
                 Test
             </button>
             </Link>
+
             </div>
+            <div class='containerSpeisen'><img class='Pizzaimage' src={Pizzaimg}></img><div class='Speisentext'>Speisen</div></div>
             </div>
         );
     }
