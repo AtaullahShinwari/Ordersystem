@@ -39,7 +39,7 @@ class Home extends Component {
                     <div class='Desserttext'>Desserts</div>
                 </Link>
                 </div>
-                </div>
+              </div>
             </div>
 
         );

@@ -13,20 +13,14 @@
 
 .containerSpeisen{
     flex: 0 1 ;
-    width: auto;
-    height: auto;
 }
 
 .containerGetränk{
     flex: 0 1 ;
-    width: auto;
-    height: auto;
 }
 
 .containerDessert{
     flex: 0 1 ;
-    width: auto;
-    height: auto;
 }
 
 .Pizzaimage{
