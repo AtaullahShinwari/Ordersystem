@@ -4,7 +4,7 @@ import {withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types'
 import Header from './Header'
 import Pizzaimg from '../images/pizza_logo.jpg'
-import Drinkimg from '../images/drink_logo.jpg'
+import Drinkimg from '../images/drink_logo.PNG'
 import Dessertimg from '../images/dessert_logo.jpeg'
 import './Home.css'
 
@@ -20,35 +20,26 @@ class Home extends Component {
         return (
             <div>
              <Header headline="McDonalds's"/>
-              <div className={classes.container}>
-              </div>
+              <div class="containerMenu">
                 <div class='containerSpeisen'>
-                 <Link to="/Speisen">
-                    <button> 
-                        <img class='Pizzaimage' src={Pizzaimg}></img>
-                    </button>
-                 </Link>
-                      <div class='Speisentext'>Speisen</div>
+                 <Link to="/Speisen" style={{ textDecoration: 'none' }}>
+                    <img class='Pizzaimage' src={Pizzaimg}></img>
+                    <div class='Speisentext'>Speisen</div>
+                </Link>
                 </div>
-
                 <div class='containerGetränk'>
                  <Link to="/Drinks">
-                    <button>
-                        <img class='Drinkimage' src={Drinkimg}></img> 
-                    </button>
-                 </Link>
-                     <div class='Drinktext'>Getränke</div>
+                    <img class='Drinkimage' src={Drinkimg}></img> 
+                    <div class='Drinktext'>Getränke</div>
+                </Link>
                 </div>
-
                 <div class='containerDessert'>
                  <Link to="/Desserts">
-                     <button>
-                        <img class='Dessertimage' src={Dessertimg} ></img>
-                     </button>
-                 </Link>
-                     <div class='Desserttext'>Desserts</div>
+                    <img class='Dessertimage' src={Dessertimg} ></img>
+                    <div class='Desserttext'>Desserts</div>
+                </Link>
                 </div>
-
+                </div>
             </div>
 
         );
@@ -57,10 +48,6 @@ class Home extends Component {
 const styles = theme => ({
     test: {
         backgroundColor: "red"
-    },
-    container: {
-  display: "flex",
-  justifyContent: "center",
     }
   });
 
