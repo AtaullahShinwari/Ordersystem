@@ -11,6 +11,38 @@ border-radius: 26px;
 }
 .Pizzaimage:hover {transform: scale(1.2);
 }
+.Speisentext{
+    position: absolute;
+left: 5.62%;
+right: 76.81%;
+top: 62.79%;
+bottom: 30.27%;
+
+background: rgba(255, 195, 45, 0.8);
+opacity: 0.9;
+border-radius: 0px 10px 10px 0px;
+
+/* SPEISEN */
+
+position: absolute;
+width: 206px;
+height: 47px;
+left: 81px;
+top: 655px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
 
 .Drinkimage{
 position: absolute;
@@ -25,7 +57,38 @@ border-radius: 26px;
 }
 .Drinkimage:hover {transform: scale(1.2);
 }
+.Drinktext{
+    position: absolute;
+left: 36.6%;
+right: 45.83%;
+top: 62.79%;
+bottom: 30.27%;
 
+background: rgba(255, 195, 45, 0.8);
+opacity: 0.9;
+border-radius: 0px 10px 10px 0px;
+
+/* GETRÖNKE */
+
+position: absolute;
+width: 206px;
+height: 47px;
+left: 520px;
+top: 655px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
 .Dessertimage{
 position: absolute;
 width: 398px;
@@ -38,4 +101,36 @@ opacity: 0.9;
 border-radius: 27px;
 }
 .Dessertimage:hover {transform: scale(1.2);
+}
+.Desserttext{
+    position: absolute;
+left: 67.01%;
+right: 15.42%;
+top: 62.79%;
+bottom: 30.27%;
+
+background: rgba(255, 195, 45, 0.8);
+opacity: 0.9;
+border-radius: 0px 10px 10px 0px;
+
+/* DESSERTS */
+
+position: absolute;
+width: 206px;
+height: 47px;
+left: 961px;
+top: 655px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }

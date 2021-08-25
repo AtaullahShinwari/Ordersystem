@@ -37,7 +37,7 @@ class Home extends Component {
                         <img class='Drinkimage' src={Drinkimg}></img> 
                     </button>
                  </Link>
-                     <div class='GetränkeText'>Getränke</div>
+                     <div class='Drinktext'>Getränke</div>
                 </div>
 
                 <div class='containerDessert'>
@@ -46,7 +46,7 @@ class Home extends Component {
                         <img class='Dessertimage' src={Dessertimg} ></img>
                      </button>
                  </Link>
-                     <div class='Desserts'>Desserts</div>
+                     <div class='Desserttext'>Desserts</div>
                 </div>
 
             </div>
