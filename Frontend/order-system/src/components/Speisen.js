@@ -2,33 +2,30 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types'
-import  './Products.css';
+import  './Speisen.css';
+import Header from './Header';
 
-class Products extends Component {
+class Speisen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            testStatus: false,
+            submenu: 'Pizza',
           };
     }
 
-test = () => {
-console.log('Erfolgreich')
-}
+
 
     render() {
         const {classes} = this.props
         return (
             <div>
-                {console.log(this.state.testStatus)}
+                <Header headline={this.state.submenu}/>
                 <Link to="/Warenkorb">
-                    <button className={classes.test} onClick={this.test()}>
+                    <button className={classes.test} >
                         test
                     </button>
                 </Link>
-                <div class="body">
-                    sadsad
-                </div>
+
             </div>
         );
     }
@@ -37,13 +34,10 @@ const styles = theme => ({
     test: {
       width: '100%',
       backgroundColor: 'blue'
-    },
-    test2: {
-        backgroundColor: 'red'
     }
   });
 
-  Products.propTypes = {
+  Speisen.propTypes = {
     classes: PropTypes.object,
 }
-export default withStyles(styles)(Products);
+export default withStyles(styles)(Speisen);
