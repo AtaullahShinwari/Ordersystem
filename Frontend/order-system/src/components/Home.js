@@ -19,7 +19,7 @@ class Home extends Component {
         const {classes} = this.props
         return (
             <div>
-             <Header/>
+             <Header headline="McDonalds's"/>
               <div className={classes.container}>
               </div>
                 <div class='containerSpeisen'>
@@ -57,6 +57,10 @@ class Home extends Component {
 const styles = theme => ({
     test: {
         backgroundColor: "red"
+    },
+    container: {
+  display: "flex",
+  justifyContent: "center",
     }
   });
 
