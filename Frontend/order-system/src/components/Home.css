@@ -9,25 +9,33 @@ mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 26px;
 }
+.Pizzaimage:hover {transform: scale(1.2);
+}
+
 .Drinkimage{
 position: absolute;
 width: 398px;
 height: 589px;
-left: 527px;
+left: 520px;
 top: 181px;
 
 mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 26px;
 }
+.Drinkimage:hover {transform: scale(1.2);
+}
+
 .Dessertimage{
 position: absolute;
 width: 398px;
 height: 589px;
-left: 965px;
+left: 961px;
 top: 181px;
 
 mix-blend-mode: multiply;
 opacity: 0.9;
 border-radius: 27px;
+}
+.Dessertimage:hover {transform: scale(1.2);
 }
