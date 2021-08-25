@@ -19,10 +19,9 @@ class Home extends Component {
         const {classes} = this.props
         return (
             <div>
-                <Header/>
-                <div className={classes.container}>
-                 </div>
-
+             <Header/>
+              <div className={classes.container}>
+              </div>
                 <div class='containerSpeisen'>
                  <Link to="/Speisen">
                     <button> 
@@ -30,15 +29,23 @@ class Home extends Component {
                     </button>
                  </Link>
                       <div class='Speisentext'>Speisen</div>
-                    </div>
-
+                </div>
 
                 <div class='containerGetränk'>
-                     <img class='Drinkimage' src={Drinkimg}></img>
-                     <div class='Getränke'>Getränke</div>
+                 <Link to="/Drinks">
+                    <button>
+                        <img class='Drinkimage' src={Drinkimg}></img> 
+                    </button>
+                 </Link>
+                     <div class='GetränkeText'>Getränke</div>
                 </div>
+
                 <div class='containerDessert'>
-                     <img class='Dessertimage' src={Dessertimg} ></img>
+                 <Link to="/Desserts">
+                     <button>
+                        <img class='Dessertimage' src={Dessertimg} ></img>
+                     </button>
+                 </Link>
                      <div class='Desserts'>Desserts</div>
                 </div>
 
