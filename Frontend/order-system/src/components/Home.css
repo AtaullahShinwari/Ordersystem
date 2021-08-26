@@ -42,23 +42,15 @@ cursor: pointer;
 background: rgba(255, 195, 45, 0.8);
 opacity: 0.9;
 border-radius: 0px 10px 10px 0px;
-
-/* SPEISEN */
-
-position: absolute;
-width: 206px;
-
+width: 17rem;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
-font-size: 32px;
-line-height: 37px;
-display: flex;
-align-items: center;
+font-size: 2.3em;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-
+transform:translateY(-8rem);
 color: #FFFFFF;
 }
 
@@ -76,29 +68,20 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 .Drinktext{
     position: absolute;
-
-background: rgba(255, 195, 45, 0.8);
-opacity: 0.9;
-border-radius: 0px 10px 10px 0px;
-
-/* GETRÖNKE */
-
-position: absolute;
-width: 206px;
-height: 47px;
-cursor: pointer;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 37px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-
-color: #FFFFFF;
+    cursor: pointer;
+    background: rgba(255, 195, 45, 0.8);
+    opacity: 0.9;
+    border-radius: 0px 10px 10px 0px;
+    width: 17rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transform:translateY(-8rem);
+    color: #FFFFFF;
 }
 .Dessertimage{
 
@@ -114,28 +97,19 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 .Desserttext{
     position: absolute;
-cursor: pointer;
-background: rgba(255, 195, 45, 0.8);
-opacity: 0.9;
-border-radius: 0px 10px 10px 0px;
-
-/* DESSERTS */
-
-position: absolute;
-width: 206px;
-height: 47px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 37px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-
-color: #FFFFFF;
+    cursor: pointer;
+    background: rgba(255, 195, 45, 0.8);
+    opacity: 0.9;
+    border-radius: 0px 10px 10px 0px;
+    width: 17rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transform:translateY(-8rem);
+    color: #FFFFFF;
 }
 
