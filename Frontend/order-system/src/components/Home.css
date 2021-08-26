@@ -29,12 +29,9 @@ width: 25rem;
 height: 36rem;
 cursor: pointer;
 border-radius: 26px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.Pizzaimage:hover {
-    transform: scale(1.2);
-}
 
 .Speisentext{
 position: absolute;
@@ -55,15 +52,12 @@ color: #FFFFFF;
 }
 
 .Drinkimage{
-position: relative;
-width: 398px;
-height: 589px;
-
-cursor: pointer;
-mix-blend-mode: multiply;
-opacity: 0.9;
-border-radius: 26px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position:relative;
+    width: 25rem;
+    height: 36rem;
+    cursor: pointer;
+    border-radius: 26px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .Drinktext{
@@ -85,14 +79,12 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .Dessertimage{
 
-width: 398px;
-height: 589px;
-
-cursor: pointer;
-mix-blend-mode: multiply;
-opacity: 0.9;
-border-radius: 27px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position:relative;
+    width: 25rem;
+    height: 36rem;
+    cursor: pointer;
+    border-radius: 26px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .Desserttext{
