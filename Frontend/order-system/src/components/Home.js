@@ -28,13 +28,13 @@ class Home extends Component {
                 </Link>
                 </div>
                 <div class='containerGetränk'>
-                 <Link to="/Drinks">
+                 <Link to="/Drinks" style={{ textDecoration: 'none' }}>
                     <img class='Drinkimage' src={Drinkimg}></img> 
                     <div class='Drinktext'>Getränke</div>
                 </Link>
                 </div>
                 <div class='containerDessert'>
-                 <Link to="/Desserts">
+                 <Link to="/Desserts" style={{ textDecoration: 'none' }}>
                     <img class='Dessertimage' src={Dessertimg} ></img>
                     <div class='Desserttext'>Desserts</div>
                 </Link>

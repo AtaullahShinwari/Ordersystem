@@ -3,12 +3,13 @@ import './App.css';
 import Home from './components/Home'
 import Speisen from './components/Speisen'
 import Submenu from './components/Submenu'
+import test from './components/test'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Home}/>
+        <Route path="/" exact component={test}/>
         <Route path="/Submenu" exact component={Submenu}/>
         <Route path="/Speisen" exact component={Speisen}/>
       </Switch>
