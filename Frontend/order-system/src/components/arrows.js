@@ -1,6 +1,7 @@
 import React from "react";
-
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 function Arrow({
   children,
@@ -17,11 +18,7 @@ function Arrow({
       onClick={onClick}
       style={{
         cursor: "pointer",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        right: "1%",
-        opacity: disabled ? "0" : "1",
+        textDecoration: "none",
         userSelect: "none"
       }}
     >
@@ -40,7 +37,7 @@ export function LeftArrow() {
 
   return (
     <Arrow  onClick={() => scrollPrev()}>
-      Left
+      <ArrowBackIosIcon></ArrowBackIosIcon>
     </Arrow>
   );
 }
@@ -56,7 +53,7 @@ export function RightArrow() {
 
   return (
     <Arrow onClick={() => scrollNext()}>
-      Right
+      <ArrowForwardIosIcon></ArrowForwardIosIcon>
     </Arrow>
   );
 }
