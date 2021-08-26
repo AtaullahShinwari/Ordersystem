@@ -7,7 +7,7 @@ class Submenu extends Component {
         return (
             <div>
                 <Header headline="Speisen"/>
-                <Link to="/Products" style={{ textDecoration: 'none' }}>
+                <Link to="/Speisen" style={{ textDecoration: 'none' }}>
                     test
                 </Link>
             </div>

@@ -6,7 +6,7 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 2em;
     justify-content: center;
     align-items: center;
 }
@@ -25,8 +25,9 @@
 
 .Pizzaimage{
 position:relative;
-width: 25rem;
-height: 36rem;
+width: 37vw;
+max-width: 25rem;
+height: 25vh;
 cursor: pointer;
 border-radius: 26px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -39,26 +40,28 @@ cursor: pointer;
 background: rgba(255, 195, 45, 0.8);
 opacity: 0.9;
 border-radius: 0px 10px 10px 0px;
-width: 17rem;
+width:30vw;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
-font-size: 2.3em;
+font-size:5vw;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-transform:translateY(-8rem);
+transform:translateY(-14vw);
 color: #FFFFFF;
 }
 
 .Drinkimage{
     position:relative;
-    width: 25rem;
-    height: 36rem;
+    width: 37vw;
+    max-width: 25rem;
+    height: 25vh;
     cursor: pointer;
     border-radius: 26px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 .Drinktext{
     position: absolute;
@@ -66,22 +69,23 @@ color: #FFFFFF;
     background: rgba(255, 195, 45, 0.8);
     opacity: 0.9;
     border-radius: 0px 10px 10px 0px;
-    width: 17rem;
+    width: 30vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 2.3em;
+    font-size: 5vw;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    transform:translateY(-8rem);
+    transform:translateY(-14vw);
     color: #FFFFFF;
 }
 .Dessertimage{
 
     position:relative;
-    width: 25rem;
-    height: 36rem;
+    width: 37vw;
+    max-width: 25rem;
+    height: 25vh;
     cursor: pointer;
     border-radius: 26px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -93,15 +97,41 @@ color: #FFFFFF;
     background: rgba(255, 195, 45, 0.8);
     opacity: 0.9;
     border-radius: 0px 10px 10px 0px;
-    width: 17rem;
+    width: 30vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 2.3em;
+    font-size: 5vw;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    transform:translateY(-8rem);
+    transform:translateY(-14vw);
     color: #FFFFFF;
 }
 
+@media screen and (min-width: 800px) {
+    .Pizzaimage {
+        height: 36rem;
+    }
+    .Speisentext {
+        font-size:2.5em;
+        width: 17rem;
+        transform:translateY(-8rem);
+    }
+    .Drinkimage {
+        height: 36rem;
+    }
+    .Drinktext {
+        font-size:2.5em;
+        width: 17rem;
+        transform:translateY(-8rem);
+    }
+    .Dessertimage {
+        height: 36rem;
+    }
+    .Desserttext {
+        font-size:2.5em;
+        width: 17rem;
+        transform:translateY(-8rem);
+    }
+  }

@@ -22,7 +22,7 @@ class Home extends Component {
              <Header headline="McDonalds's"/>
               <div class="containerMenu">
                 <div class='containerSpeisen'>
-                 <Link to="/Speisen" style={{ textDecoration: 'none' }}>
+                 <Link to="/Submenu" style={{ textDecoration: 'none' }}>
                     <img class='Pizzaimage' src={Pizzaimg}></img>
                     <div class='Speisentext'>Speisen</div>
                 </Link>
