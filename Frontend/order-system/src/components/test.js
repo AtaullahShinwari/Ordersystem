@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import Pizzaimg from '../images/pizza_logo.jpg'
@@ -14,15 +14,22 @@ import Header from './Header'
 // import "./hideScrollbar.css";
 // import "./firstItemMargin.css";
 
+class Tst extends Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+
+        };
+  }
+
+
+
+  render() {
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 const elemPrefix = "test";
 const getId = (index: number) => `${elemPrefix}${index}`;
-
-
-
-function App() {
-  let items = [
+ let items = [
       {
           id: 0,
           image: Pizzaimg,
@@ -63,4 +70,5 @@ function App() {
     </>
   );
 }
-export default App;
+}
+export default Tst;
