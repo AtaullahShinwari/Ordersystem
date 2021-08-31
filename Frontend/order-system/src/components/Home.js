@@ -23,7 +23,7 @@ class Home extends Component {
               <div className={classes.container}>
               </div>
                 <div class='containerSpeisen'>
-                 <Link to="/Speisen">
+                 <Link to="/Submenu">
                     <button> 
                         <img class='Pizzaimage' src={Pizzaimg}></img>
                     </button>
