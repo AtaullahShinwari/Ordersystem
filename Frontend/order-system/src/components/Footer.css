@@ -1,0 +1,48 @@
+.SpeisenClass{ 
+position: absolute;
+width: 80px;
+height: 75px;
+left: 12px;
+top: 592px;
+}
+
+.SpeisenIcon{
+height: 63px;
+width: 55px;
+left: 270px;
+top: 598px;
+border-radius: 0px;
+}
+
+.DrinksClass{ 
+position: absolute;
+width: 55px;
+height: 63px;
+left: 270px;
+top: 598px;
+}
+
+.DrinksIcon{ 
+height: 63px;
+width: 55px;
+left: 270px;
+top: 598px;
+border-radius: 0px;
+}
+
+.DessertClass{ 
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 141px;
+    top: 592px;
+}
+
+.DessertIcon{
+height: 63px;
+width: 55px;
+left: 270px;
+top: 598px;
+border-radius: 0px;
+
+}
