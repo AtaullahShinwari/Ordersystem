@@ -1,17 +1,17 @@
 
 .containerSubmenu{
     
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     border: none;
-    color: white;
-    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     border-right-style: solid;
     border-right-color: rgb(0, 0, 0);
-    border-right-width: 3px; 
+    border-right-width: 1px; 
   }
   .containerMenu::-webkit-scrollbar{
     display: none;
@@ -19,7 +19,15 @@
 .Submenutext{
     color: rgb(0, 0, 0)
 }
+.Submenutext:hover{
+    color: rgb(162, 223, 21);
+}
 @media screen and (max-width: 800px) {
-
+    .Submenutext{
+        color: rgb(0, 0, 0)
+    }
+    .Submenutext:hover{
+        color: rgb(162, 223, 21);
+    }
 
 }
