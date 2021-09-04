@@ -5,165 +5,20 @@
 *{margin:0;
     padding: 0;}
 
-.containerSpeisenP::-webkit-scrollbar{
+.containerSpeisen::-webkit-scrollbar{
     display: none;
 }
-.containerSpeisenP{
-    margin-top: 5rem;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    margin: auto;
-}
-.containerGetränkP{
-    flex: 0 1;
-    margin-right: 1em;
-}
-.containerDessertP{
-    flex: 0 1;
-    margin-right: 1em;
-}
+.containerSpeisenA{
+    position: absolute;
+    width: 2000px;
+    height: 52px;
+    left: 00px;
+    top: 120px;
 
-.PizzaimageP{
-    position: absolute;
-    width: 384px;
-    height: 188px;
-    left: 35px;
-    top: 176px;
-    background-blend-mode: overlay;
-    mix-blend-mode: multiply;
-    opacity: 0.85;
-    border-radius: 20px;
-    object-fit: cover
 }
-.PizzaimageP:focus{
-    transform: scale(1.2)
-}
+@media screen and (max-width: 800px) {
+.containerSpeisenA{
+width: 380px;
+height: 52px;
 
-.SpeisentextP{
-    position: absolute;
-    left: 2.36%;
-    right: 81.81%;
-    top: 29%;
-    bottom: 67.87%;
-    
-    background: rgba(255, 195, 45, 0.8);
-    opacity: 0.9;
-    border-radius: 0px 10px 10px 0px;
-    
-    
-    /* SPEISEN */
-    
-    
-    position: absolute;
-    width: 218px;
-    height: 29px;
-    left: 25px;
-    top: 300px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 37px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-}
-.DrinkimageP{
-position: absolute;
-width: 384px;
-height: 189px;
-left: 35px;
-top: 396px;
-mix-blend-mode: multiply;
-opacity: 0.9;
-border-radius: 23px;
-object-fit: cover
-}
-.DrinktextP{
-    position: absolute;
-    left: 2.36%;
-    right: 81.81%;
-    top: 51.17%;
-    bottom: 45.7%;
-    
-    background: rgba(255, 195, 45, 0.8);
-    opacity: 0.9;
-    border-radius: 0px 10px 10px 0px;
-    
-    
-    /* GETRÄNKE */
-    
-    
-    position: absolute;
-    width: 218px;
-    height: 29px;
-    left: 35px;
-    top: 526px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 37px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;    
-}
-.DessertimageP{
-    position: absolute;
-width: 384px;
-height: 188px;
-left: 35px;
-top: 625px;
-
-mix-blend-mode: multiply;
-opacity: 0.9;
-border-radius: 20px;
-object-fit: cover
-}
-.DesserttextP{
-    position: absolute;
-    left: 2.57%;
-    right: 81.6%;
-    top: 74.32%;
-    bottom: 22.56%;
-    
-    background: rgba(255, 194, 46, 0.8);
-    opacity: 0.9;
-    border-radius: 0px 10px 10px 0px;
-    
-    
-    /* DESSERTS */
-    
-    
-    position: absolute;
-    width: 218px;
-    height: 29px;
-    left: 35px;
-    top: 763px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 37px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-}  
+}}
