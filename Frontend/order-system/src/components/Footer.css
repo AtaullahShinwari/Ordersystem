@@ -1,3 +1,10 @@
+.footer {
+    width: auto;
+    height: auto;
+    display: flex;
+    
+}
+
 .SpeisenClass{ 
 position: absolute;
 width: 80px;

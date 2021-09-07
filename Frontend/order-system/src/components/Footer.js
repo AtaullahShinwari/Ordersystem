@@ -14,7 +14,7 @@ class Footer extends Component {
         const {classes} = this.props
         return (
             <div>
-                <div className="footer">
+                <div class="footer">
                 <Link to="/" style={{ textDecoration: 'none' }}>
                 </Link>
 
@@ -22,7 +22,7 @@ class Footer extends Component {
                 <Link to="/Speisen" style={{ textDecoration: 'none' }}>
                     <Button class='SpeisenIcon' src={LocalPizzaSharpIcon}></Button>
                 </Link>
-
+                </div>
                 <div class='DrinksClass'>
                  <Link to="/Drinks" style={{ textDecoration: 'none' }}>
                     <Button class='DrinksIcon' src={LocalBarSharpIcon}></Button> 
@@ -33,7 +33,6 @@ class Footer extends Component {
                  <Link to="/Desserts" style={{ textDecoration: 'none' }}>
                     <Button class='DessertsIcon' src={CakeSharpIcon} ></Button>
                 </Link>
-                </div>
                 </div>
             </div>
             </div>
